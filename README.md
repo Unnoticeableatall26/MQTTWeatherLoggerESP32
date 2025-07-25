@@ -349,8 +349,6 @@ This IoT Weather Logger ESP32 project represents a **complete, professional-grad
 
 The project demonstrates mastery of IoT concepts, MQTT communication, database design, web development, computer vision, and system integration - making it an exemplary implementation suitable for both academic evaluation and real-world deployment.
 
-🚀 **Ready for demonstration, deployment, and further development!** 🚀
-
 ---
 
-**HITEMA IoT Team 2024** | **Project: MQTTWeatherLoggerESP32** | **Level 4 Complete Implementation**
+**H3 HITEMA 2025** | **Project: MQTTWeatherLoggerESP32** | **Completed Level 4 Implementation**
