@@ -1,0 +1,28 @@
+# Core IoT and Web Framework Dependencies
+Flask>=3.0.0
+paho-mqtt>=1.6.1
+pandas>=2.0.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# Database and Data Processing
+sqlite3  # Built-in with Python, listed for reference
+
+# Computer Vision (Optional - for intrusion detection)
+opencv-python>=4.8.0  # For Level 4+ intrusion detection feature
+
+# Development and Testing
+pytest>=7.0.0  # For automated testing
+pytest-cov>=4.0.0  # Coverage reporting
+
+# Additional utilities used in the project
+Jinja2>=3.1.0  # Template engine (Flask dependency)
+Werkzeug>=3.0.0  # WSGI utility library (Flask dependency)
+click>=8.1.0  # Command line interface utility
+itsdangerous>=2.1.0  # Various helpers (Flask dependency)
+MarkupSafe>=2.1.0  # Safe string handling (Jinja2 dependency)
+
+# Optional AI/ML dependencies for future enhancements
+# tensorflow>=2.13.0  # Uncomment for plant disease classification
+# scikit-learn>=1.3.0  # Uncomment for advanced analytics
+# requests>=2.31.0  # Uncomment for weather API integration

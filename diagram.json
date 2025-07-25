@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "author": "HITEMA IoT Team - Level 4 Multi-Zone",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -37.58, "left": -96.37, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht_paris", "top": -200, "left": 80, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht_milan", "top": -120, "left": 180, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht_geneva", "top": -40, "left": 280, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo_paris", "top": 60, "left": 80, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo_milan", "top": 140, "left": 180, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo_geneva", "top": 220, "left": 280, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    
+    [ "dht_paris:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht_paris:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "dht_paris:SDA", "esp:4", "blue", [ "v0" ] ],
+    
+    [ "dht_milan:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht_milan:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "dht_milan:SDA", "esp:2", "green", [ "v0" ] ],
+    
+    [ "dht_geneva:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht_geneva:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "dht_geneva:SDA", "esp:15", "yellow", [ "v0" ] ],
+    
+    [ "servo_paris:V+", "esp:3V3", "red", [ "v0" ] ],
+    [ "servo_paris:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "servo_paris:PWM", "esp:18", "orange", [ "v0" ] ],
+    
+    [ "servo_milan:V+", "esp:3V3", "red", [ "v0" ] ],
+    [ "servo_milan:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "servo_milan:PWM", "esp:19", "purple", [ "v0" ] ],
+    
+    [ "servo_geneva:V+", "esp:3V3", "red", [ "v0" ] ],
+    [ "servo_geneva:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "servo_geneva:PWM", "esp:21", "brown", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

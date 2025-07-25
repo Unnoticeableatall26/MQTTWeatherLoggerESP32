@@ -1,0 +1,34 @@
+[wokwi]
+version = "1"
+firmware = "firmware.bin"
+
+# Main MicroPython file to run on the ESP32
+[[wokwi.files]]
+src = "main_level3.py"
+dst = "main.py"
+
+# Circuit diagram configuration
+[[wokwi.files]]
+src = "diagram.json"
+dst = "diagram.json"
+
+# WiFi configuration for the simulation
+[wokwi.wifi]
+ssid = "Wokwi-GUEST"
+password = ""
+
+# Serial monitor configuration
+[wokwi.serial]
+baud = 115200
+
+# Project metadata
+[project]
+name = "MQTT Weather Logger ESP32"
+description = "ESP32 project that reads DHT22 sensor data and publishes it via MQTT"
+author = "Student Project"
+version = "1.0.0"
+
+# Dependencies for MicroPython
+[dependencies]
+"umqtt.simple" = "*"
+"ujson" = "*"
